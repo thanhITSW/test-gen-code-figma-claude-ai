@@ -1,0 +1,226 @@
+// Variables
+$primary-color: #4338ca;
+$secondary-color: #6366f1;
+$error-color: #ef4444;
+$white: #ffffff;
+$light-gray: #f3f4f6;
+$text-primary: #111827;
+$text-secondary: #6b7280;
+
+// Main container
+.pricing-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, $primary-color, $secondary-color);
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Main pricing card
+.pricing-card {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  background: $white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+}
+
+// Header section
+.header-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.gradient-title {
+  margin-bottom: 0.75rem !important;
+  background: linear-gradient(135deg, $primary-color, $secondary-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700 !important;
+  font-size: 1.875rem !important;
+  line-height: 1.2 !important;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem !important;
+  }
+}
+
+.subtitle {
+  color: $text-secondary !important;
+  font-size: 0.875rem !important;
+  line-height: 1.5 !important;
+}
+
+// Services section
+.services-section {
+  margin-bottom: 1.5rem;
+}
+
+.service-card {
+  background: $white;
+  border: 1px solid $light-gray !important;
+  border-radius: 12px !important;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: $primary-color !important;
+  }
+}
+
+.service-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-icon {
+  color: $primary-color;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.service-name {
+  color: $text-primary;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.service-price {
+  color: $text-primary;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+// Additional option card
+.additional-option-card {
+  border: 1px dashed $error-color !important;
+  border-radius: 12px !important;
+  margin-bottom: 1rem;
+  background: #fef2f2 !important;
+}
+
+.additional-option-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.additional-option-icon {
+  color: $error-color;
+  font-size: 0.875rem;
+}
+
+.additional-option-text {
+  color: $error-color;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.additional-option-price {
+  color: $error-color;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+// Main CTA card
+.main-cta-card {
+  background: linear-gradient(135deg, $primary-color, $secondary-color) !important;
+  border: none !important;
+  border-radius: 12px !important;
+  margin-bottom: 1rem;
+}
+
+.main-cta-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-cta-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.main-cta-avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-cta-avatar-text {
+  color: $white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.main-cta-title {
+  color: $white;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.main-cta-price {
+  color: $white;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+// Trial button
+.trial-button {
+  height: 48px !important;
+  border-radius: 24px !important;
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  background: linear-gradient(135deg, $primary-color, $secondary-color) !important;
+  border: none !important;
+  box-shadow: 0 10px 15px -3px rgba(67, 56, 202, 0.3) !important;
+  margin-bottom: 0.75rem !important;
+
+  &:hover {
+    opacity: 0.95;
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Disclaimer text
+.disclaimer-text {
+  display: block;
+  text-align: center;
+  color: $text-secondary !important;
+  font-size: 0.75rem !important;
+}
+
+// Animation
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pricing-card {
+  animation: fadeIn 0.4s ease-out;
+}
