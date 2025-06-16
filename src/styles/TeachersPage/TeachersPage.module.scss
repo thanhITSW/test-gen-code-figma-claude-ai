@@ -1,0 +1,195 @@
+.teachersPage {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.teachersHeader {
+  text-align: center;
+  padding: 80px 20px 60px;
+  background-color: #ffffff;
+
+  .headerTitle {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    
+    .highlight {
+      color: #6366f1;
+    }
+  }
+
+  .headerDescription {
+    font-size: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    color: #6b7280;
+    line-height: 1.5;
+  }
+}
+
+.teachersContent {
+  background-color: #f8fafc;
+  padding: 50px 0 70px;
+}
+
+.teachersContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.teachersGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 0;
+}
+
+.teacherCard {
+  background: white;
+  border-radius: 8px;
+  padding: 30px 25px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  border: 1px solid #e2e8f0;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .teacherAvatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    border: none;
+  }
+
+  .teacherName {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #1a202c;
+  }
+
+  .teacherTitle {
+    font-size: 0.8rem;
+    color: #6366f1;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+  }
+
+  .teacherDescription {
+    font-size: 0.9rem;
+    color: #718096;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .learnMoreBtn {
+    background: transparent;
+    border: 1px solid #6366f1;
+    color: #6366f1;
+    font-weight: 500;
+    font-size: 0.8rem;
+    padding: 8px 20px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    height: auto;
+
+    &:hover {
+      background: #6366f1;
+      color: white;
+      border-color: #6366f1;
+    }
+  }
+}
+
+.recruitmentSection {
+  background: #eef2ff;
+  padding: 60px 20px;
+  text-align: center;
+
+  .recruitmentContent {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .recruitmentTitle {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 12px;
+  }
+
+  .recruitmentDescription {
+    font-size: 0.95rem;
+    color: #718096;
+    line-height: 1.5;
+    margin-bottom: 28px;
+  }
+
+  .recruitmentBtn {
+    background: #6366f1;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 12px 28px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    height: auto;
+
+    &:hover {
+      background: #5856eb;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .teachersHeader {
+    padding: 60px 20px 40px;
+
+    .headerTitle {
+      font-size: 2.5rem;
+    }
+
+    .headerDescription {
+      font-size: 0.95rem;
+    }
+  }
+
+  .teachersContent {
+    padding: 40px 0 60px;
+  }
+  
+  .teachersContainer {
+    padding: 0 15px;
+  }
+
+  .teachersGrid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .teacherCard {
+    padding: 25px 20px;
+  }
+
+  .recruitmentSection {
+    padding: 50px 20px;
+
+    .recruitmentTitle {
+      font-size: 1.5rem;
+    }
+  }
+}

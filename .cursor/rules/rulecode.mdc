@@ -1,0 +1,64 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+/**
+ * QUY TẮC TẠO MÀN HÌNH MỚI TRONG DỰ ÁN REACT + TYPESCRIPT (SỬ DỤNG ANT DESIGN)
+ *
+ * 1. TẠO FOLDER TRANG MỚI (ví dụ: "Profile")
+ * 
+ * File index.tsx phải chứa comment này với các câu lệnh tạo file:
+ * mkdir -p src/pages/Profile/component
+ * touch src/pages/Profile/index.tsx
+ * touch src/pages/Profile/component/Profile.tsx
+ * mkdir -p src/styles/Profile
+ * touch src/styles/Profile/Profile.module.scss
+ * mkdir -p src/types/Profile
+ * touch src/types/Profile/profile.types.ts
+ *
+ * ➤ File & ý nghĩa:
+ * - index.tsx: Export mặc định của trang Profile
+ * - component/Profile.tsx: Component chính (sử dụng Ant Design)
+ * - component/...: Các component con khác (nếu có)
+ *
+ * ✅ Quy tắc đặt tên:
+ * - Tên folder và file: PascalCase
+ * - Component chính trùng tên với page
+ * - Component con: PascalCase, mô tả chức năng
+
+ * 2. SCSS - STYLE RIÊNG CHO TRANG
+ * - Sử dụng SCSS module
+ * - Tên file: ComponentName.module.scss
+ * - Ưu tiên className={styles.className}
+ * - Khi override style Ant Design dùng :global
+
+ * 3. TYPES - KHAI BÁO KIỂU DỮ LIỆU
+ * - Tên file: pageName.types.ts (viết thường)
+ * - Type dùng chung đặt trong src/types/
+ * - Khai báo đầy đủ type cho props Ant Design
+
+ * 4. COMPONENT TÁI SỬ DỤNG
+ * - Vị trí: src/components/ui/
+ * - Tên file & component: PascalCase
+ * - Ưu tiên sử dụng component Ant Design
+
+ * 5. REDUX STATE RIÊNG (nếu cần)
+ * - Tên file: profileSlice.ts
+ * - Tên slice: ${pageName}Slice
+
+ * 6. HOOK RIÊNG (nếu cần)
+ * - Tên file: usePageName.ts
+ * - Tên hook: usePageName
+
+ * 7. i18n - QUỐC TẾ HÓA
+ * - Bắt buộc dùng i18n cho mọi text hiển thị
+ * - Thêm key vào file ngôn ngữ tương ứng
+
+ * 📌 LƯU Ý KHI DÙNG ANT DESIGN:
+ * - Import component Ant Design đúng level
+ * - Typing đầy đủ cho props component
+ * - Ưu tiên component Ant Design thay native HTML
+ * - Custom style qua className hoặc SCSS module
+
+ */

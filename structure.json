@@ -1,0 +1,146 @@
+{
+  "api": {
+    "authApi.ts": "file",
+    "axiosClient.ts": "file",
+    "userApi.ts": "file"
+  },
+  "App.css": "file",
+  "App.tsx": "file",
+  "assets": {
+    "chart-icon.svg": "file",
+    "china-flag-icon.svg": "file",
+    "hero-image.svg": "file",
+    "icon-fb.svg": "file",
+    "icon-instagram.svg": "file",
+    "icon-twitter.svg": "file",
+    "icon-youtube.svg": "file",
+    "Image-login-page.svg": "file",
+    "logo.svg": "file",
+    "message-icon.svg": "file",
+    "react.svg": "file",
+    "stats-icon.svg": "file",
+    "uk-icon.svg": "file"
+  },
+  "components": {
+    "Errors": {
+      "Error404.tsx": "file"
+    },
+    "features": {
+      "courses": {
+        "CourseCard.tsx": "file",
+        "CoursesList.tsx": "file",
+        "CTASection.tsx": "file",
+        "index.ts": "file",
+        "ProfileCard.tsx": "file"
+      }
+    },
+    "FormField": {
+      "FormItem.tsx": "file",
+      "PasswordInputField.tsx": "file",
+      "TextInputField.tsx": "file"
+    },
+    "Forms": {
+      "PhoneInputField.tsx": "file",
+      "SubmitButton.tsx": "file",
+      "VerticalForm.tsx": "file"
+    },
+    "Layout": {
+      "MainPageLayout.tsx": "file",
+      "NavBar.tsx": "file"
+    },
+    "Navbar.tsx": "file",
+    "ui": {
+      "Footer.tsx": "file",
+      "Header.tsx": "file",
+      "HeaderFooter.scss": "file",
+      "index.ts": "file"
+    }
+  },
+  "configs": {},
+  "constants": {
+    "common.ts": "file"
+  },
+  "contexts": {
+    "ThemeContext.tsx": "file"
+  },
+  "hooks": {
+    "common.ts": "file",
+    "useLanguage.ts": "file",
+    "useLocalStorage.ts": "file",
+    "useSubmitForm.ts": "file"
+  },
+  "i18n": {
+    "i18n.ts": "file",
+    "index.ts": "file",
+    "locales": {
+      "ch": {
+        "translation.json": "file"
+      },
+      "en": {
+        "translation.json": "file"
+      }
+    }
+  },
+  "index.css": "file",
+  "main.tsx": "file",
+  "pages": {
+    "CoursePage": {
+      "CoursesPage.scss": "file",
+      "CoursesPage.tsx": "file",
+      "CoursesPage.types.ts": "file",
+      "index.ts": "file"
+    },
+    "Dashboard": {
+      "MainLayout.tsx": "file",
+      "TodoList.tsx": "file"
+    },
+    "LandingPage": {
+      "CommunityLandingPage.tsx": "file"
+    },
+    "LandingPage.tsx": "file",
+    "Login": {
+      "components": {
+        "LoginComponent.tsx": "file"
+      },
+      "LoginForm.tsx": "file"
+    },
+    "PriceLanding": {
+      "PricingLandingPage.tsx": "file"
+    },
+    "Register": {
+      "Register.tsx": "file"
+    },
+    "Test": {
+      "CustomCalendar.tsx": "file",
+      "MapComponent.tsx": "file"
+    }
+  },
+  "redux": {
+    "slices": {
+      "authSlice.ts": "file",
+      "formSlice.ts": "file"
+    },
+    "store.ts": "file"
+  },
+  "styles": {
+    "LandingPage.module.scss": "file",
+    "LandingPage.scss": "file",
+    "loginForm.scss": "file",
+    "main.scss": "file",
+    "mainLayout.scss": "file",
+    "navBar.scss": "file",
+    "navBarAndMenuBar.scss": "file",
+    "pricingLanding.scss": "file",
+    "responsive.scss": "file",
+    "variables.scss": "file"
+  },
+  "types": {
+    "auth.ts": "file",
+    "axios.ts": "file",
+    "common.ts": "file",
+    "http.ts": "file",
+    "index.ts": "file",
+    "user.ts": "file"
+  },
+  "vite-env.d.ts": "file"
+}

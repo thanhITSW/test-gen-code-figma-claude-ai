@@ -1,0 +1,441 @@
+.teacherProfile {
+    background: #ffffff;
+    
+    .profileContainer {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 24px;
+      
+      .profileContent {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 60px;
+        
+        .leftSidebar {
+          .profileCard {
+            text-align: center;
+            
+            .avatarWrapper {
+              margin-bottom: 24px;
+              
+              .avatar {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 4px solid #f0f0f0;
+              }
+            }
+            
+            .teacherName {
+              font-size: 20px;
+              font-weight: 600;
+              color: #1a1a1a;
+              margin-bottom: 8px;
+            }
+            
+            .teacherTitle {
+              color: #4c6ef5;
+              font-size: 14px;
+              font-weight: 600;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              margin-bottom: 16px;
+            }
+            
+            .teacherDescription {
+              color: #6c757d;
+              font-size: 14px;
+              line-height: 1.6;
+              margin-bottom: 24px;
+            }
+            
+            .socialLinks {
+              display: flex;
+              justify-content: center;
+              gap: 12px;
+              
+              .socialLink {
+                width: 36px;
+                height: 36px;
+                background: #f8f9fa;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #6c757d;
+                text-decoration: none;
+                transition: all 0.2s ease;
+                
+                &:hover {
+                  background: #4c6ef5;
+                  color: white;
+                  transform: translateY(-2px);
+                }
+              }
+            }
+          }
+        }
+        
+        .mainContent {
+          .tabsSection {
+            margin-bottom: 40px;
+            
+            :global(.ant-tabs) {
+              .ant-tabs-nav {
+                &::before {
+                  border-bottom: 1px solid #f0f0f0;
+                }
+              }
+              
+              .ant-tabs-tab {
+                padding: 16px 24px;
+                font-weight: 500;
+                
+                &.ant-tabs-tab-active {
+                  .ant-tabs-tab-btn {
+                    color: #4c6ef5;
+                    font-weight: 600;
+                  }
+                }
+                
+                .ant-tabs-tab-btn {
+                  color: #6c757d;
+                  display: flex;
+                  align-items: center;
+                  gap: 8px;
+                }
+              }
+              
+              .ant-tabs-ink-bar {
+                background: #4c6ef5;
+              }
+            }
+          }
+          
+          .tabContent {
+            .aboutSection {
+              .sectionTitle {
+                font-size: 24px;
+                font-weight: 600;
+                color: #1a1a1a;
+                margin-bottom: 20px;
+              }
+              
+              .aboutText {
+                color: #6c757d;
+                font-size: 16px;
+                line-height: 1.7;
+                margin-bottom: 32px;
+                
+                .highlightText {
+                  color: #4c6ef5;
+                  font-weight: 600;
+                }
+              }
+              
+              .experienceSection {
+                margin-bottom: 40px;
+                
+                .experienceTitle {
+                  font-size: 20px;
+                  font-weight: 600;
+                  color: #1a1a1a;
+                  margin-bottom: 16px;
+                }
+                
+                .experienceText {
+                  color: #6c757d;
+                  font-size: 16px;
+                  line-height: 1.7;
+                  
+                  .highlightText {
+                    color: #4c6ef5;
+                    font-weight: 600;
+                  }
+                }
+              }
+              
+              .projectImage {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 12px;
+                margin: 32px 0;
+              }
+              
+              .imageCaption {
+                text-align: center;
+                color: #6c757d;
+                font-size: 14px;
+                margin-bottom: 32px;
+              }
+              
+              .projectsSection {
+                .projectsTitle {
+                  font-size: 20px;
+                  font-weight: 600;
+                  color: #1a1a1a;
+                  margin-bottom: 16px;
+                }
+                
+                .projectsList {
+                  list-style: none;
+                  padding: 0;
+                  margin-bottom: 24px;
+                  
+                  .projectItem {
+                    position: relative;
+                    padding-left: 16px;
+                    margin-bottom: 8px;
+                    color: #6c757d;
+                    font-size: 16px;
+                    line-height: 1.6;
+                    
+                    &::before {
+                      content: '•';
+                      position: absolute;
+                      left: 0;
+                      color: #4c6ef5;
+                      font-weight: 600;
+                    }
+                  }
+                }
+                
+                .projectsDescription {
+                  color: #6c757d;
+                  font-size: 16px;
+                  line-height: 1.7;
+                  
+                  .highlightText {
+                    color: #4c6ef5;
+                    font-weight: 600;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    .ctaSection {
+      background: linear-gradient(135deg, #4c6ef5 0%, #3b5bdb 100%);
+      position: relative;
+      overflow: hidden;
+      
+      .ctaContent {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 80px 24px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        
+        .ctaText {
+          .ctaTitle {
+            font-size: 36px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 16px;
+            line-height: 1.3;
+          }
+          
+          .ctaSubtitle {
+            font-size: 20px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 16px;
+          }
+          
+          .ctaDescription {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 32px;
+          }
+          
+          .ctaButton {
+            background: white;
+            color: #4c6ef5;
+            border: none;
+            height: 48px;
+            padding: 0 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            
+            &:hover {
+              background: #f8f9fa;
+              color: #4c6ef5;
+              transform: translateY(-2px);
+              box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            }
+          }
+        }
+        
+        .ctaIllustration {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+          .illustrationWrapper {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            
+            .illustrationElement {
+              position: absolute;
+              background: rgba(255, 255, 255, 0.1);
+              border-radius: 12px;
+              backdrop-filter: blur(10px);
+              border: 1px solid rgba(255, 255, 255, 0.2);
+              
+              &.element1 {
+                top: 20px;
+                right: 20px;
+                width: 120px;
+                height: 80px;
+                background: rgba(255, 255, 255, 0.15);
+              }
+              
+              &.element2 {
+                top: 60px;
+                left: 40px;
+                width: 200px;
+                height: 120px;
+                background: rgba(255, 255, 255, 0.1);
+              }
+              
+              &.element3 {
+                bottom: 40px;
+                right: 40px;
+                width: 160px;
+                height: 100px;
+                background: rgba(255, 255, 255, 0.12);
+              }
+              
+              &.element4 {
+                bottom: 20px;
+                left: 20px;
+                width: 100px;
+                height: 60px;
+                background: rgba(255, 255, 255, 0.08);
+              }
+            }
+            
+            .playButton {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 60px;
+              height: 60px;
+              background: white;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #4c6ef5;
+              font-size: 20px;
+              cursor: pointer;
+              transition: all 0.3s ease;
+              box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+              z-index: 10;
+              
+              &:hover {
+                transform: translate(-50%, -50%) scale(1.1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // Responsive styles
+  @media (max-width: 1024px) {
+    .teacherProfile {
+      .profileContainer {
+        .profileContent {
+          grid-template-columns: 1fr;
+          gap: 40px;
+          
+          .leftSidebar {
+            .profileCard {
+              display: flex;
+              align-items: center;
+              text-align: left;
+              gap: 24px;
+              
+              .avatarWrapper {
+                margin-bottom: 0;
+                flex-shrink: 0;
+              }
+              
+              .profileInfo {
+                flex: 1;
+              }
+              
+              .socialLinks {
+                justify-content: flex-start;
+              }
+            }
+          }
+        }
+      }
+      
+      .ctaSection {
+        .ctaContent {
+          grid-template-columns: 1fr;
+          gap: 40px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .teacherProfile {
+      .profileContainer {
+        padding: 40px 16px;
+        
+        .profileContent {
+          .leftSidebar {
+            .profileCard {
+              flex-direction: column;
+              text-align: center;
+            }
+          }
+        }
+      }
+      
+      .ctaSection {
+        .ctaContent {
+          padding: 60px 16px;
+          
+          .ctaText {
+            .ctaTitle {
+              font-size: 28px;
+            }
+            
+            .ctaSubtitle {
+              font-size: 18px;
+            }
+          }
+          
+          .ctaIllustration {
+            .illustrationWrapper {
+              width: 300px;
+              height: 200px;
+            }
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,364 @@
+.ctaSection {
+  background: linear-gradient(135deg, #3434FF 0%, #8b5cf6 100%);
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+
+  .ctaContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .ctaText {
+    color: #fff;
+
+    .ctaTitle {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 0;
+      line-height: 1.2;
+    }
+
+    .ctaSubtitle {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      line-height: 1.2;
+    }
+
+    .ctaDescription {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 32px;
+      opacity: 0.9;
+      max-width: 400px;
+    }
+
+    .ctaButton {
+      background: #fff;
+      border: 1.5px solid #e5e7eb;
+      color: #6366f1;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 12px 28px;
+      border-radius: 6px;
+      transition: all 0.3s;
+      text-transform: none;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 8px rgba(99, 102, 241, 0.08);
+      cursor: pointer;
+
+      &:hover {
+        background: #f8fafc;
+        color: #4f46e5;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+      }
+    }
+  }
+
+  .ctaIllustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 320px;
+
+    .illustrationWrapper {
+      position: relative;
+      width: 370px;
+      height: 240px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Laptop/video mockup */
+    .laptopMockup {
+      position: absolute;
+      left: 40px;
+      top: 40px;
+      width: 220px;
+      height: 140px;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 10px 32px rgba(0, 0, 0, 0.12);
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .laptopScreen {
+        position: relative;
+        width: 190px;
+        height: 100px;
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        border-radius: 6px;
+        margin-top: 18px;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .playButton {
+        position: absolute;
+        left: 24px;
+        top: 30px;
+        width: 38px;
+        height: 38px;
+        background: #6366f1;
+        border-radius: 50%;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::after {
+          content: '';
+          display: block;
+          margin-left: 12px;
+          border-style: solid;
+          border-width: 8px 0 8px 16px;
+          border-color: transparent transparent transparent #fff;
+          height: 0;
+          width: 0;
+        }
+      }
+
+      .videoList {
+        position: absolute;
+        right: 12px;
+        top: 22px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        >div {
+          width: 32px;
+          height: 8px;
+          background: #e0e7ff;
+          border-radius: 3px;
+        }
+      }
+    }
+
+    /* Phone mockup */
+    .phoneMockup {
+      position: absolute;
+      left: -30px;
+      top: 100px;
+      width: 60px;
+      height: 110px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .phoneContent {
+        width: 44px;
+        margin-top: 12px;
+      }
+
+      .phoneLine,
+      .phoneLineShort {
+        height: 10px;
+        background: #e0e7ff;
+        border-radius: 3px;
+        margin-bottom: 8px;
+      }
+
+      .phoneLine {
+        width: 100%;
+      }
+
+      .phoneLineShort {
+        width: 60%;
+      }
+    }
+
+    /* Floating doc mockup */
+    .docMockup {
+      position: absolute;
+      right: 0;
+      top: -30px;
+      width: 90px;
+      height: 70px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+      z-index: 4;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 14px 12px;
+
+      .docLine,
+      .docLineShort {
+        height: 10px;
+        background: #6366f1;
+        border-radius: 3px;
+        margin-bottom: 8px;
+        opacity: 0.7;
+      }
+
+      .docLine {
+        width: 80%;
+      }
+
+      .docLineShort {
+        width: 40%;
+      }
+    }
+
+    /* Chart mockup */
+    .chartMockup {
+      position: absolute;
+      right: 10px;
+      bottom: -20px;
+      width: 90px;
+      height: 60px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+      z-index: 5;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding: 10px 12px 8px 12px;
+
+      .chartBar {
+        width: 10px;
+        background: #6366f1;
+        border-radius: 2px 2px 0 0;
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .floatingElements {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    .element {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+
+      &.element1 {
+        width: 30px;
+        height: 30px;
+        top: 10%;
+        left: 10%;
+        animation: float 6s ease-in-out infinite;
+      }
+
+      &.element2 {
+        width: 20px;
+        height: 20px;
+        top: 20%;
+        right: 15%;
+        animation: float 4s ease-in-out infinite reverse;
+      }
+
+      &.element3 {
+        width: 25px;
+        height: 25px;
+        bottom: 15%;
+        left: 5%;
+        animation: float 5s ease-in-out infinite;
+      }
+    }
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 900px) {
+  .ctaContent {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .ctaIllustration {
+    margin-top: 32px;
+
+    .illustrationWrapper {
+      margin: 0 auto;
+      width: 320px;
+      height: 200px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .ctaSection {
+    padding: 60px 20px;
+
+    .ctaContent {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      text-align: center;
+    }
+
+    .ctaText {
+
+      .ctaTitle,
+      .ctaSubtitle {
+        font-size: 2rem;
+      }
+
+      .ctaDescription {
+        font-size: 0.95rem;
+        max-width: none;
+      }
+    }
+
+    .ctaIllustration {
+      .illustrationWrapper {
+        height: 200px;
+      }
+
+      .deviceMockup {
+        &.laptop {
+          width: 200px;
+          height: 130px;
+        }
+
+        &.phone {
+          width: 60px;
+          height: 100px;
+        }
+
+        &.tablet {
+          width: 90px;
+          height: 65px;
+        }
+
+        &.chart {
+          width: 75px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}

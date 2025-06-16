@@ -8,12 +8,16 @@ import './App.css'
 import './i18n';
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
+import Header from './components/ui/Header/components/Header';
+import Footer from './components/ui/Footer/components/Footer';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Provider store={store}>
       <ThemeProvider>
+        <Header />
         <App />
+        <Footer />
       </ThemeProvider>
     </Provider>
   </StrictMode>,
